@@ -2,7 +2,7 @@
 # @Author: Your name
 # @Date:   2021-11-06 11:57:30
 # @Last Modified by:   Your name
-# @Last Modified time: 2021-11-07 13:13:18
+# @Last Modified time: 2021-11-07 13:53:17
 
 #!/usr/bin/env python
 # coding: utf-8
@@ -36,6 +36,8 @@ if __name__ == '__main__':
 
     target_names = ['1', '2', '3', '4']
     print(classification_report(y_true, y_pred, target_names=target_names))
+
+    # print("Number of mislabeled points out of a total %d points : %d" % (X_test.shape[0], (y_test != y_pred).sum()))
 
 
 

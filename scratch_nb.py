@@ -2,7 +2,7 @@
 # @Author: Your name
 # @Date:   2021-11-07 13:06:52
 # @Last Modified by:   Your name
-# @Last Modified time: 2021-11-07 13:14:50
+# @Last Modified time: 2021-11-07 13:53:22
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -126,15 +126,15 @@ if __name__ == '__main__':
     print(classification_report(y_true_np, res_np, target_names=target_names))
 
 
-    # correct = 0
-    # incorrect = 0
-    # idx = 0
-    # for item in y_true_np:
-    #     if item == res_np[idx]:
-    #         correct += 1
-    #     else:
-    #         incorrect += 1
-    #     idx += 1
+    correct = 0
+    incorrect = 0
+    idx = 0
+    for item in y_true_np:
+        if item == res_np[idx]:
+            correct += 1
+        else:
+            incorrect += 1
+        idx += 1
 
     # print("Correct:", correct, "Incorrect:", incorrect, "Total:", correct + incorrect)
 
